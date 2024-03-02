@@ -478,8 +478,9 @@ body.light hr.separator {
   }
 
   .header .icon-box h2 {
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
   }
 
   .header .icon-box a {
@@ -553,8 +554,44 @@ body.light hr.separator {
   z-index: 111;
   border-radius: 30px;
   left: 40px;
-  top: 40px;
+  top: 65px;
   box-shadow: 0 0 7px rgba(0,0,0,.9);
+}
+/* Style for top menu */
+.top-menu {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  background-color: #28a745;; /* Change the background color as needed */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; /* Ensure it's above other content */
+}
+
+.top-menu .menu-item {
+  display: inline-block;
+  margin-right: 20px; /* Adjust the value as needed to add space between items */
+}
+
+.top-menu .menu-item:last-child {
+  margin-right: 0; /* Remove margin from the last item to prevent extra space */
+}
+
+
+.top-menu .menu-item {
+  display: inline-block;
+}
+
+.top-menu .menu-item a {
+  color: #fff; /* Change the text color as needed */
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.top-menu .menu-item.active a {
+  background-color:black; /* Change the background color for the active item as needed */
 }
 
 .home .container-home {
@@ -571,11 +608,10 @@ body.light hr.separator {
 .home .home-details h1 {
   font-size: 51px;
   color: #28a745;
-  line-height: 62px;
   font-weight: 700;
   margin: 18px 0 10px;
   position: relative;
-  padding-left: 70px;
+  padding-left: 0px;
 }
 .contact .contactform input[type=text]:focus, .contact .contactform input[type=email]:focus, .contact .contactform textarea:focus, body.light.contact .contactform input[type=text]:focus, body.light.contact .contactform input[type=email]:focus, body.light.contact .contactform textarea:focus, .blog .page-item.active .page-link, .blog .page-link:hover, body.light.blog .page-item.active .page-link, body.light.blog .page-link:hover, .button {
   border: 1px solid #28a745;
@@ -591,16 +627,6 @@ body.light hr.separator {
 }
 .home .home-details h1:before, .about .resume-box .icon, .contact ul.social li a:hover, body.light.contact ul.social li a:hover, .preloader .loader, .blog .page-link:hover, .blog .page-item.active .page-link, body.light.blog .page-link:hover, body.light.blog .page-item.active .page-link, .portfolio .grid li figure div, .header ul.icon-menu li.icon-box.active, .header ul.icon-menu li.icon-box:hover, body.light .header ul.icon-menu li.icon-box.active, body.light .header ul.icon-menu li.icon-box:hover, .btn, .header .icon-box h2, .home .color-block, .title-section hr, .portfolio .slideshow .carousel-indicators li.active, .button:before, .button-icon {
   background-color: #28a745 !important;
-}
-.home .home-details h1:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 29px;
-  height: 4px;
-  background-color: #28a745;
-  width: 40px;
-  border-radius: 10px;
 }
 
 .home .home-details h1 span {
