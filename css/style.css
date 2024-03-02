@@ -62,6 +62,15 @@ body {
   background-color: #111;
 }
 
+.poppins-font span {
+  display: inline-block;
+  transition: transform 0.5s ease-in-out;
+}
+
+.poppins-font:hover span {
+  transform: translateY(-100%);
+}
+
 .poppins-font {
   font-family: 'Poppins', sans-serif;
 }
