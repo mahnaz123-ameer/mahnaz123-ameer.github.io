@@ -545,7 +545,6 @@ body.light hr.separator {
 }
 
 .home .bg {
-  background-image: url(../img/hi.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -556,17 +555,10 @@ body.light hr.separator {
   top: 40px;
   box-shadow: 0 0 7px rgba(0,0,0,.9);
 }
-
-/* Apply different styles for smaller screens (e.g., mobile phones) */
-@media (max-width: 576px) {
-  .home .bg {
-    /* Adjust styles for mobile devices */
-    background-size: contain; /* Ensures the entire image fits within the container */
-    border-radius: 0; /* Remove border radius for mobile */
-    left: 0;
-    top: 0;
-    height: auto; /* Let the height adjust based on the content */
-    box-shadow: none; /* Remove box shadow for mobile */
+/* CSS for small screens (up to 991px) */
+@media (max-width: 991px) {
+  .bg {
+      background-image: none; /* Hide the background image */
   }
 }
 
