@@ -36,101 +36,40 @@
 
     <!-- Modernizr JS File -->
     <script src="js/modernizr.custom.js"></script>
+    
+    <style>
+        /* Mobile Menu Styles */
+        .mobile-menu {
+            display: none;
+        }
+        
+        @media (max-width: 991px) {
+            .mobile-menu {
+                display: block;
+            }
+            .top-menu {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body class="home">
-
-      <!-- Fixed Navigation Ends -->
     <!-- Mobile Menu Starts -->
-    <nav role="navigation" class="d-block d-lg-none">
-        <div id="menuToggle">
-            <input type="checkbox">
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul class="list-unstyled" id="menu">
-                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
-                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
-                <li class="active"><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
-                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
-                <!-- <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li> -->
-            </ul>
-        </div>
+    <nav role="navigation" class="mobile-menu d-block d-lg-none">
+        <ul>
+            <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+            <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+            <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+            <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+            <!-- <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li> -->
+        </ul>
     </nav>
     <!-- Mobile Menu Ends -->
- <!-- Top Navigation Starts -->
- <ul class="top-menu">
-    <li class="menu-item active" id="home">
-        <a href="index.html">Home</a>
-    </li>
-    
-    <li class="menu-item">
-        <a href="about.html">About</a>
-    </li>
-    <li class="menu-item">
-        <a href="portfolio.html">Portfolio</a>
-    </li>
-    <li class="menu-item">
-        <a href="contact.html">Contact</a>
-    </li>
-    
-    <!-- <li class="menu-item">
-        <a href="blog.html">Blog</a>
-    </li> -->
-</ul>
-<!-- Top Navigation Ends -->
-    <!-- Live Style Switcher Starts - demo only -->
-    <div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
-    <!-- Live Style Switcher Ends - demo only -->
 
-   <!-- Header Starts -->
-<header class="header" id="navbar-collapse-toggle">
-
-
-    <!-- Fixed Navigation Starts -->
-    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
-       
-        <li class="icon-box">
-            <a title="Linkedin" href="https://www.linkedin.com/in/mahnaz-ameer-948110252/">
-                <i class="fa fa-linkedin"></i></a>
-                <h2>Linkedin</h2>
-        </li>
-       
-
-        <li class="icon-box">
-            <a title="Facebook" href="https://www.facebook.com/syed.mahnaz/">
-                <i class="fa fa-facebook"></i></a>
-                <h2>Facebook</h2>
-        </li>
-    <li class="icon-box">
-        <a title="Instagram" href="https://www.instagram.com/syedmahnaz/">
-            <i class="fa fa-instagram"></i></a>
-            <h2>Instagram</h2>
-    </li>
-
-
-          <li class="icon-box">
-            <a title="Twitter" href="https://twitter.com/Mahnazameer">
-                <i class="fa fa-twitter"></i></a>
-                <h2>Twitter</h2>
-          </li> 
-       
-        <li class="icon-box active">
-            <i class="fa fa-envelope-open"></i>
-            <a href="contact.html">
-                <h2>Contact</h2>
-            </a>
-        </li>
-        <!-- <li class="icon-box">
-            <i class="fa fa-comments"></i>
-            <a href="blog.html">
-                <h2>Blog</h2>
-            </a>
-        </li> -->
-    </ul>
     <!-- Top Navigation Starts -->
     <ul class="top-menu">
-        <li class="menu-item active">
+        <li class="menu-item active" id="home">
             <a href="index.html">Home</a>
         </li>
         <li class="menu-item">
@@ -147,16 +86,50 @@
         </li> -->
     </ul>
     <!-- Top Navigation Ends -->
-</header>
-  
-    
-    </header>
-    <!-- Header Ends -->
 
-    
     <!-- Main Content Starts -->
+    <header class="header" id="navbar-collapse-toggle">
+        <!-- Fixed Navigation Starts -->
+        <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+            <li class="icon-box">
+                <a title="Linkedin" href="https://www.linkedin.com/in/mahnaz-ameer-948110252/">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <h2>Linkedin</h2>
+            </li>
+            <li class="icon-box">
+                <a title="Facebook" href="https://www.facebook.com/syed.mahnaz/">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <h2>Facebook</h2>
+            </li>
+            <li class="icon-box">
+                <a title="Instagram" href="https://www.instagram.com/syedmahnaz/">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <h2>Instagram</h2>
+            </li>
+            <li class="icon-box">
+                <a title="Twitter" href="https://twitter.com/Mahnazameer">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <h2>Twitter</h2>
+            </li>
+            <li class="icon-box active">
+                <i class="fa fa-envelope-open"></i>
+                <a href="contact.html">
+                    <h2>Contact</h2>
+                </a>
+            </li>
+            <!-- <li class="icon-box">
+                <i class="fa fa-comments"></i>
+                <a href="blog.html">
+                    <h2>Blog</h2>
+                </a>
+            </li> -->
+        </ul>
+    </header>
     <!-- Main Content Starts -->
-   
     <section class="container-fluid main-container container-home p-0 revealator-slideup revealator-once revealator-delay1">
         <div class="color-block d-none d-lg-block"></div>
         <div class="row home-details-container align-items-center">
@@ -170,24 +143,14 @@
                     <h1 class="poppins-font"> Hello, I'm Mahnaz Ameer<span></span></h1>
                     <h2 class="poppins-font">I am a full stack Web Developer and UI/UX enthusiast</h3>
                     
-                        <a class="button" href="about.html" style="margin-top: 40px;">
-                            <span class="button-text">more about me</span>
-                            <span class="button-icon fa fa-arrow-right"></span>
-                        </a>
-                        
-
-                    
-                
-                    
+                    <a class="button" href="about.html" style="margin-top: 40px;">
+                        <span class="button-text">more about me</span>
+                        <span class="button-icon fa fa-arrow-right"></span>
+                    </a>
                 </div>
-    
-               
             </div>
         </div>
     </section>
-    <!-- 
-        <p class="open-sans-font">I completed my undergraduate studies in the Department of Computer Science and Engineering at Dhaka University (CSEDU). I have a strong desire to construct an enduring career in the IT field, leveraging my knowledge and skills. To realize this ambition, I am resolute in my commitment to work diligently, aiming for excellence and efficiency.</p>
-    -->
     <!-- Main Content Ends -->
 
     <!-- Template JS Files -->
@@ -203,8 +166,6 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/custom.js"></script>
-    
-
 </body>
 
 </html>
