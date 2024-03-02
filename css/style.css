@@ -557,6 +557,20 @@ body.light hr.separator {
   box-shadow: 0 0 7px rgba(0,0,0,.9);
 }
 
+/* Apply different styles for smaller screens (e.g., mobile phones) */
+@media (max-width: 576px) {
+  .home .bg {
+    /* Adjust styles for mobile devices */
+    background-size: contain; /* Ensures the entire image fits within the container */
+    border-radius: 0; /* Remove border radius for mobile */
+    left: 0;
+    top: 0;
+    height: auto; /* Let the height adjust based on the content */
+    box-shadow: none; /* Remove box shadow for mobile */
+  }
+}
+
+
 .home .container-home {
   display: flex;
   align-items: center;
