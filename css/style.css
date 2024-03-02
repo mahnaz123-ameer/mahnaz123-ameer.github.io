@@ -556,13 +556,6 @@ body.light hr.separator {
   top: 40px;
   box-shadow: 0 0 7px rgba(0,0,0,.9);
 }
-/* CSS for small screens (up to 991px) */
-@media (max-width: 991px) {
-  .bg {
-      background-image: none; /* Hide the background image */
-  }
-}
-
 
 .home .container-home {
   display: flex;
