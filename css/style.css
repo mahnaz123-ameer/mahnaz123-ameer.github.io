@@ -623,10 +623,10 @@ body.light hr.separator {
   text-decoration: none;
   padding: 10px 20px;
 }
-
+/*
 .top-menu .menu-item.active a {
-  background-color:black; /* Change the background color for the active item as needed */
-}
+  background-color:black;
+}  /* Change the background color for the active item as needed */
 
 .home .container-home {
   display: flex;
