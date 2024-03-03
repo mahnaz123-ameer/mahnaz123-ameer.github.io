@@ -316,6 +316,40 @@ body.light hr.separator {
     top: 31px;
   }
 }
+
+/*** Top menu ***/
+/* Default styles */
+.top-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  overflow: hidden;
+}
+
+.top-menu li {
+  float: left;
+}
+
+.top-menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.top-menu li a:hover {
+  background-color: #111;
+}
+
+/* Hide top bar on mobile */
+@media only screen and (max-width: 768px) {
+  .top-menu-desktop {
+      display: none;
+  }
+}
+
 /*** Buttons ***/
 .button {
   overflow: hidden;
